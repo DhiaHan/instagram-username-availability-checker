@@ -5,10 +5,6 @@ import string
 import requests
 from datetime import datetime
 
-baseLink = 'https://www.instagram.com/'
-requestSubLink = 'api/v1/web/accounts/web_create_ajax/attempt/'
-requestLink = os.path.join(baseLink, requestSubLink)  
-
 def extractCsrftoken(session):
     requestUrl = 'https://www.instagram.com/'
     session.headers.update({
